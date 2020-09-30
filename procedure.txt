@@ -1,0 +1,50 @@
+Написал программу, которая считает частоту букв в тексте в %, наибольшую частоту имела буква P: 12,5%. Исходя из таблицы приблизительной частоты предположим, что P = E.
+В тексте можно часто увидеть символ D после дат, а также после апострофов, скорее всего это символ S (1940s, 1950s).
+Часто встречается отдельно стоящая буква H, скорее всего является артиклем A.
+В тексте втречаем фрагмент HF FGP, предпологаем, что HF это an или at, но an не может быть, т.к слово FGP тогда начинается с согласной, => F = T
+Помимо этого встречам слово HO, делаем вывод что O = N
+Пробуем найти популярное слово AND. У нас должно получиться HO?, находим HOU, делаем вывод U = D
+Находим FGP, встречается часто в тексте, начинается на T, заканчивается на E, скорее всего это артикль the, делаем вывод, что G = H
+Часто встречается слово SO, скорее всего это предлог in => S = I
+На этом этапе пробую вывести текст с помощью программы, получаю текст:
+IN THE 1940S, THE FIRST RE***NI*A*** *AN**A*E RE**IRED A *REAT
+DEA* *F INTE**E*T*A* EFF*RT. AN EAR** *R***SA* F*R A HI*H-*E*E*
+*R**RA**IN* *AN**A*E *AS **AN*A****, DE*E***ED ** **NRAD **SE F*R
+HIS *1 *****TER *ET*EEN 1943 AND 1945 **T N*T I***E*ENTED AT THE TI*E.
+THE FIRST F*N*TI*NIN* *R**RA**IN* *AN**A*ES DESI*NED T*
+*****NI*ATE INSTR**TI*NS T* A *****TER *ERE *RITTEN IN THE EAR**
+1950S. **HN *A**H**\'S SH*RT **DE, *R***SED IN 1949, *AS *NE *F THE
+FIRST HI*H-*E*E* *AN**A*ES E*ER DE*E***ED F*R AN E*E*TR*NI*
+*****TER. *N*I*E *A*HINE **DE, SH*RT **DE STATE*ENTS RE*RESENTED
+*ATHE*ATI*A* E**RESSI*NS IN *NDERSTANDA**E F*R*. H**E*ER, THE
+*R**RA* HAD T* *E TRANS*ATED INT* *A*HINE **DE E*ER* TI*E IT RAN,
+*A*IN* THE *R**ESS ***H S***ER THAN R*NNIN* THE E**I*A*ENT
+*A*HINE **DE. IN THE EAR** 1950S, A*I** **ENNIE DE*E***ED A*T***DE,
+**SSI*** THE FIRST ****I*ED *R**RA**IN* *AN**A*E, AT THE
+*NI*ERSIT* *F *AN*HESTER. IN 1954, A SE**ND ITERATI*N *F THE
+*AN**A*E, *N**N AS THE "*AR* 1 A*T***DE," *AS DE*E***ED F*R THE *AR* 1
+** R. A. *R***ER. *R***ER A*S* DE*E***ED AN A*T***DE F*R THE FERRANTI
+*ER**R* IN THE 1950S IN **N**N*TI*N *ITH THE *NI*ERSIT* *F
+*AN*HESTER. THE *ERSI*N F*R THE EDSA* 2 *AS DE*ISED ** D****AS
+HARTREE *F *NI*ERSIT* *F *A**RID*E *ATHE*ATI*A* *A**RAT*R* IN
+1961. *N**N AS EDSA* 2 A*T***DE, IT *AS A STRAI*HT DE*E****ENT FR**
+*ER**R* A*T***DE ADA*TED F*R ***A* *IR***STAN*ES AND *AS
+N*TED F*R ITS ***E*T **DE **TI*I*ATI*N AND S**R*E-*AN**A*E
+DIA*N*STI*S *HI*H *ERE AD*AN*ED F*R THE TI*E. A **NTE***RAR* **T
+SE*ARATE THREAD *F DE*E****ENT, AT*AS A*T***DE *AS DE*E***ED F*R
+THE *NI*ERSIT* *F *AN*HESTER AT*AS 1 *A*HINE. IN 1954, F*RTRAN *AS
+IN*ENTED AT I** ** A TEA* *ED ** **HN *A***S; IT *AS THE FIRST *IDE**
+*SED HI*H-*E*E* *ENERA* **R**SE *R**RA**IN* *AN**A*E T* HA*E A
+F*N*TI*NA* I***E*ENTATI*N, AS ****SED T* **ST A DESI*N *N *A*ER.
+*HEN F*RTRAN *AS FIRST INTR*D**ED, IT *AS *IE*ED *ITH S*E*TI*IS*
+D*E T* ***S, DE*A*S IN DE*E****ENT, AND THE ****ARATI*E EFFI*IEN**
+*F "HAND-**DED" *R**RA*S *RITTEN IN ASSE****. H**E*ER, IN A
+HARD*ARE *AR*ET THAT *AS RA*ID** E****IN*; THE *AN**A*E
+E*ENT*A*** *E*A*E *N**N F*R ITS EFFI*IEN**. IT IS STI** A *****AR
+*AN**A*E F*R HI*H-*ERF*R*AN*E *****TIN* AND IS *SED F*R
+*R**RA*S THAT *EN*H*AR* AND RAN* THE **R*D\'S FASTEST
+S**ER*****TERS.
+По нему заполнить оставшуюся часть таблицы не так и сложно, т.к многие слова уже вполне читаемы.
+Таблицу см. в файле table.txt
+Расшифрованный текст см. в файле decrypted.txt
+Код программы см. в файле main.cpp
